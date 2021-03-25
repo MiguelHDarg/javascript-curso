@@ -1,26 +1,32 @@
-let nombre = prompt("¿Cuál es tu nombre?");
+numero = prompt("¿En qué numero estoy pensando?");
 
-alert("Hola " + nombre);
+if (numero > 1000){
+    alert("¡Adivinaste! =O")
+}
 
-let añonacimiento = prompt("¿En qué año naciste?");
+else if(numero <= 1000){
+    alert("No adivinaste :(")
+}
 
-let añoactual = prompt("¿En qué año estamos?");
+texto = prompt("¿En qué palabra estoy pensando?");
 
-let tuedad = añoactual - añonacimiento;
+if (texto == "hola"){
+    alert("¡Lo hiciste!")
+}
 
-alert("Eso quiere decir que tienes " + tuedad);
+else if(texto != "hola"){
+    alert("No estoy pensando en esa palabra :(")
+}
 
-let miaño = 1992;
+otroNumero = prompt("¿En qué número estoy pensando?");
 
-alert("Yo nací en el año " + miaño);
+if (otroNumero > 10 && otroNumero < 50){
+    alert("¡Si! Es correcto")
+}
 
-let minombre = "Miguel";
-
-alert("Y mi nombre es " + minombre);
-
-let resultado = "Tú eres " + nombre + " y tienes " +  tuedad;
-
-alert(resultado);
+else if(otroNumero <= 10 || otroNumero >= 50){
+    alert("No es correcto =/")
+}
 
 
 
